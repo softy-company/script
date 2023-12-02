@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tgMessage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container mt-5 pt-5 pb-5">
+        <div class="col-md-6 offset-md-3">
+          <form id="tg">
+            <div class="form-group">
+              <label class="form-label">Имя</label>
+              <input type="text" name="name" class="form-control" />
+            </div>
+            <!-- form-group -->
+  
+            <div class="form-group">
+              <label class="form-label">Email</label>
+              <input type="email" name="email" class="form-control" />
+            </div>
+            <!-- form-group -->
+  
+            <div
+              id="success"
+              class="alert alert-success mt-3"
+              role="alert"
+              style="display: none"
+            ></div>
+  
+            <button type="submit" class="btn btn-primary mt-4">Отправить</button>
+          </form>
+        </div>
+        <!-- col-md-6 offset-md-3 -->
+      </div>
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+      <script src="./script.js"></script>
+</body>
+</html>
