@@ -22,17 +22,17 @@ axios.post(URI_API, {
     this.email.value = "";
     console.log(nameInput.value);
     console.log(emailInput.value);
-    if (nameInput.value !== "" || emailInput.value !== "") {
-        nameInput.value.preventDefault()
-        success.innerHTML = "Сообщение не отправлено!";
-        console.log("err");
-    } else {
-        success.innerHTML = "Сообщение отправлено!";
-        console.log("next");
+    // if (nameInput.value !== "" || emailInput.value !== "") {
+    //     nameInput.value.preventDefault()
+    //     success.innerHTML = "Сообщение не отправлено!";
+    //     console.log("err");
+    // } else {
+    //     success.innerHTML = "Сообщение отправлено!";
+    //     console.log("next");
 
-    }
-    success.style.display = "block"
-    success.style.marginBottom = "20px"
+    // }
+    // success.style.display = "block"
+    // success.style.marginBottom = "20px"
 
 })
 
