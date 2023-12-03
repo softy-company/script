@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.title{
+    text-align: center;
+    margin-top: 60px;
+}
+/* .form-label{
+    position: absolute;
+    top: 10px;
+    left: 15px;
+
+} */
+#tg{
+    display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+/* margin-top: 50px; */
+}
+/* label{
+    font-size: 15px;
+    color: #605c5c;
+} */
+input{
+    padding:9px 0 7px 8px ; 
+    font-size: 13px;
+    width: 250px;
+    height: 20px;
+    margin-bottom: 10px;
+    border:none;
+    border:1px solid #9b9595ce;
+    background: #fbfbfb;
+
+}
+/* .form-group{
+    position: relative;
+} */
+/* input:focus ~ button, */
+/* input:valid { 
+    background:red;
+  } */
+
+   h3{
+    margin-left: 170px;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #129ecd	;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+    font-weight: 400;
+    /* font-style: oblique; */
+  }
+  .btn{
+
+    padding: 9px 110px;
+    border-radius: 8px;
+    border:none;
+    background:#02b7f4f6 ;
+    color: #fff;
+    font-weight: 600;
+
+
+
+  }
+  span ion-icon{
+/* color: #129ecd; */
+margin-right: 10px;
+width: 20px;
+height: 20px;
+/* margin-top: 10px; */
+
+  }
+  .buttonTitle{
+    font-weight: 600;
+    padding: 8px 26px;
+    border: none;
+    font-size: 15px;
+    display: flex;
+    background:#00a9e1f6 ;
+    border-radius: 13px;
+color:white;
+    margin-bottom: 20px;
+    /* align-items: center; */
+  }
+  .or {
+    /* width: px; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .line{
+    height: 1px;
+    width: 100px;
+    background: rgba(0, 0, 0, 0.139);
+  }
+  .or h5{
+    color: rgba(53, 53, 53, 0.667);
+    font-family: sans-serif;
+  }
+  .title {
+    margin-bottom: 70px;
+
+  }
+  .language{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+
+  }
+  .language h5{
+    color: rgba(53, 53, 53, 0.519);
+    font-family: sans-serif;
+  }
+  .img img{
+    width: 60px;
+    height: 50px;
+  }
+  .img{
+    margin-top: 60px;
+  }
