@@ -126,3 +126,38 @@ color:white;
   .img{
     margin-top: 60px;
   }
+  .icon ion-icon{
+    position: absolute;
+    top: 350px;
+    right:60px;
+
+  }
+
+  @media(max-width:488px){
+    .icon ion-icon{
+      position: absolute;
+      top: 350px;
+      right:125px;
+  
+    }
+    
+  }
+  @media(max-width:400px){
+    .icon ion-icon{
+      position: absolute;
+      top: 350px;
+      right:80px;
+  
+    }
+    
+  }
+  @media(max-width:370px){
+    .icon ion-icon{
+      position: absolute;
+      top: 350px;
+      right:60px;
+  
+    }
+    
+  }
+

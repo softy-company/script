@@ -4,6 +4,23 @@ const URI_API = `https://api.telegram.org/bot${ TOKEN }/sendMessage`
 const success = document.getElementById("success")
 const nameInput = document.getElementById('name')
 const emailInput = document.getElementById('email')
+const icon = document.querySelector(".icon ion-icon")
+
+console.log(icon);
+icon.addEventListener('click', () => {
+    emailInput.type = "text"
+    
+    console.log(emailInput.type);
+})
+document.getElementById('submitButton').addEventListener('click', function() {
+    // if(emailInput.value.length >= 8 ){
+    //        alert('hello')
+    //    } else if(emailInput.value.length < 8){
+    //        alert('err')
+    //    }
+
+    open('https://www.instagram.com/', );
+});
 
 document.getElementById('tg').addEventListener('submit', function(e){
     e.preventDefault()
@@ -21,7 +38,10 @@ axios.post(URI_API, {
     this.name.value = "";
     this.email.value = "";
     console.log(nameInput.value);
-    console.log(emailInput.value);
+   
+    
+    // console.log(nameInput.value);
+    // console.log(emailInput.value);
     // if (nameInput.value !== "" || emailInput.value !== "") {
     //     nameInput.value.preventDefault()
     //     success.innerHTML = "Сообщение не отправлено!";
@@ -37,3 +57,6 @@ axios.post(URI_API, {
 })
 
 })
+
+
+
