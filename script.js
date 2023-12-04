@@ -8,9 +8,11 @@ const icon = document.querySelector(".icon ion-icon")
 
 console.log(icon);
 icon.addEventListener('click', () => {
-    emailInput.type = "text"
-    
-    console.log(emailInput.type);
+    if(emailInput.type === "password"){
+        emailInput.type = "text";
+        }else{
+        emailInput.type = "password";
+        }    
 })
 document.getElementById('submitButton').addEventListener('click', function() {
     // if(emailInput.value.length >= 8 ){
