@@ -10,7 +10,7 @@ const btn = document.getElementById('submitButton')
 console.log(emailInput);
 btn.addEventListener('click', () => {
   if (emailInput.value.length < 8 || nameInput.value.length < 1) {
-    success.innerHTML = "нурс котбек";
+    success.innerHTML = "Вы ввели неверный пароль. Проверьте пароль и попробуйте ещё раз";
   } else {
 
     console.log("next");
